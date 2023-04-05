@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PUUUU.Models;
+using PUUUU.Models.ViewModels;
 using System.Diagnostics;
 
 namespace PUUUU.Controllers

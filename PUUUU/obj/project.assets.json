@@ -951,6 +951,26 @@
             "rid": "win"
           }
         }
+      },
+      "PUUUU.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/PUUUU.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PUUUU.Models.dll": {}
+        }
+      },
+      "PUUUU.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/PUUUU.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PUUUU.Services.dll": {}
+        }
       }
     }
   },
@@ -2442,6 +2462,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "PUUUU.Models/1.0.0": {
+      "type": "project",
+      "path": "../PUUUU.Models/PUUUU.Models.csproj",
+      "msbuildProject": "../PUUUU.Models/PUUUU.Models.csproj"
+    },
+    "PUUUU.Services/1.0.0": {
+      "type": "project",
+      "path": "../PUUUU.Services/PUUUU.Services.csproj",
+      "msbuildProject": "../PUUUU.Services/PUUUU.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2450,7 +2480,9 @@
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.13",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.13",
-      "Microsoft.EntityFrameworkCore.Tools >= 6.0.13"
+      "Microsoft.EntityFrameworkCore.Tools >= 6.0.13",
+      "PUUUU.Models >= 1.0.0",
+      "PUUUU.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2484,7 +2516,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\blaze\\PUUUU\\PUUUU.Models\\PUUUU.Models.csproj": {
+              "projectPath": "C:\\Users\\blaze\\PUUUU\\PUUUU.Models\\PUUUU.Models.csproj"
+            },
+            "C:\\Users\\blaze\\PUUUU\\PUUUU.Services\\PUUUU.Services.csproj": {
+              "projectPath": "C:\\Users\\blaze\\PUUUU\\PUUUU.Services\\PUUUU.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
