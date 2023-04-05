@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RdMQa6DTl4kQYQzyS/l61piREx63Um6wTiCCT5++W5vAleSydmR1Wn+roHMC9xua+U4bdg/SOKmWuRaNdEM68Q==",
+  "dgSpecHash": "74zqGBBHa0enQv3rWYj8pRRhkhALdoQaXtnu7/l/yil5az6yVHk3Wl8SGuA4tkTmTwJ8sBcZv6y6eUKTg9F5yw==",
   "success": true,
   "projectFilePath": "C:\\Users\\blaze\\PUUUU\\PUUUU\\PUUUU.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\blaze\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.13\\microsoft.entityframeworkcore.abstractions.6.0.13.nupkg.sha512",
     "C:\\Users\\blaze\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.13\\microsoft.entityframeworkcore.analyzers.6.0.13.nupkg.sha512",
     "C:\\Users\\blaze\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.13\\microsoft.entityframeworkcore.design.6.0.13.nupkg.sha512",
+    "C:\\Users\\blaze\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\6.0.13\\microsoft.entityframeworkcore.inmemory.6.0.13.nupkg.sha512",
     "C:\\Users\\blaze\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.13\\microsoft.entityframeworkcore.relational.6.0.13.nupkg.sha512",
     "C:\\Users\\blaze\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.13\\microsoft.entityframeworkcore.sqlserver.6.0.13.nupkg.sha512",
     "C:\\Users\\blaze\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.13\\microsoft.entityframeworkcore.tools.6.0.13.nupkg.sha512",

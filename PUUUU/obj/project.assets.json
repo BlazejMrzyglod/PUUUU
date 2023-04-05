@@ -239,6 +239,22 @@
           "build/net6.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.InMemory/6.0.13": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.13"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/6.0.13": {
         "type": "package",
         "dependencies": {
@@ -1390,6 +1406,20 @@
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
+    "Microsoft.EntityFrameworkCore.InMemory/6.0.13": {
+      "sha512": "NEOR8DI3v3heJkWLhyu7LyoXLGB0qNlkABzkzQ+90/YTjFlQU/L/tbG2cKMsZXtk4hlTI10Xzn24h+YkUNustw==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/6.0.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.6.0.13.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
+      ]
+    },
     "Microsoft.EntityFrameworkCore.Relational/6.0.13": {
       "sha512": "kFMLjZPvUeg/hRdYBXSWtOaxFWTI2sf5a31Gbq6xXivOVQbOV8TBC6K7MsG91HiLpzBsWO5fvGiD9SiIAfhpNw==",
       "type": "package",
@@ -2479,6 +2509,7 @@
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.13",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.13",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.13",
+      "Microsoft.EntityFrameworkCore.InMemory >= 6.0.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.13",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.13",
       "PUUUU.Models >= 1.0.0",
@@ -2545,6 +2576,10 @@
             "version": "[6.0.13, )"
           },
           "Microsoft.AspNetCore.Identity.UI": {
+            "target": "Package",
+            "version": "[6.0.13, )"
+          },
+          "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
             "version": "[6.0.13, )"
           },
