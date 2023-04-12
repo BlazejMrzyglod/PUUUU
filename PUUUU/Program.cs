@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PUUUU.Data;
+using PUUUU.Models.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
