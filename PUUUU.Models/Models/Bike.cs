@@ -14,7 +14,7 @@ namespace PUUUU.Models.Models
         public string Type { get; set; }
         public string Size { get; set; }
         public double Price { get; set; }
-        public virtual int BikeOfferId { get; set; }
-        public virtual BikeOffer BikeOffer { get; set; }
+        public int Quantity { get; set; }
+        public virtual ICollection<BikePart> BikeParts { get; set; }
     }
 }

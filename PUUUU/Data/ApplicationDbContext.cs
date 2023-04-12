@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using PUUUU.Models.Models;
 
 namespace PUUUU.Data
 {
@@ -9,5 +10,8 @@ namespace PUUUU.Data
             : base(options)
         {
         }
+
+        DbSet<Bike> Bikes { get; set; }
+        DbSet<BikePart> BikeParts { get; set;}
     }
 }
