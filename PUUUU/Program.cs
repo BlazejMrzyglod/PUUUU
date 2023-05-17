@@ -19,7 +19,6 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
-SeedData(app);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -45,10 +44,6 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
-
-app.Run();
-
-
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetService<ApplicationDbContext>();
@@ -84,5 +79,41 @@ using (var scope = app.Services.CreateScope())
     bikeParts.ForEach(b => db.BikeParts.Add(b));
 
     db.SaveChanges();
+
+    var userManager = scope.ServiceProvider.GetService<UserManager<IdentityUser>>();
+    var roleManager = scope.ServiceProvider.GetService<RoleManager<IdentityRole>>();
+
+    if (roleManager != null)
+    {
+        if (!roleManager.RoleExistsAsync("Administrator").Result)
+            roleManager.CreateAsync(new IdentityRole()
+            {
+                Name = "Administrator"
+            });
+        if (!roleManager.RoleExistsAsync("User").Result)
+            roleManager.CreateAsync(new IdentityRole()
+            {
+                Name = "User"
+            });
+    }
+
+    var createAdmin = userManager.CreateAsync(
+        new IdentityUser()
+        {
+            UserName = "test@test.com",
+            Email = "test@test.com",
+        }, "Test12345!");
+    var admin = userManager.FindByNameAsync("test@test.com").Result;
+
+    var verificationCode = userManager.GenerateEmailConfirmationTokenAsync(admin).Result;
+    // code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+
+    var result = userManager.ConfirmEmailAsync(admin, verificationCode).Result;
+
+    userManager.AddToRoleAsync(admin, "Administrator");
 }
+app.Run();
+
+
+
 
