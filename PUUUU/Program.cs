@@ -14,6 +14,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
@@ -47,9 +48,9 @@ app.MapRazorPages();
 
 app.Run();
 
-static void SeedData(WebApplication app)
+
+using (var scope = app.Services.CreateScope())
 {
-    var scope = app.Services.CreateScope();
     var db = scope.ServiceProvider.GetService<ApplicationDbContext>();
 
     List<Bike> bikes = new List<Bike>()
@@ -84,3 +85,4 @@ static void SeedData(WebApplication app)
 
     db.SaveChanges();
 }
+
