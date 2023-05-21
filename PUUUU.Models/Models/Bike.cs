@@ -15,6 +15,7 @@ namespace PUUUU.Models.Models
         public string Size { get; set; }
         public double Price { get; set; }
         public int Quantity { get; set; }
+        public string Image { get; set; }
         public virtual ICollection<BikePart> BikeParts { get; set; }
     }
 }

@@ -50,16 +50,16 @@ using (var scope = app.Services.CreateScope())
 
     List<Bike> bikes = new List<Bike>()
         {
-            new Bike() { Id = 1, Brand = "Trek", Model = "Fuel EX 8", Type = "Mountain Bike", Size = "Medium", Price = 3500.00, Quantity = 3 },
-            new Bike() { Id = 2, Brand = "Specialized", Model = "Diverge", Type = "Gravel Bike", Size = "Large", Price = 2500.00, Quantity = 5 },
-            new Bike() { Id = 3, Brand = "Giant", Model = "TCR Advanced Pro 2", Type = "Road Bike", Size = "Small", Price = 3600.00, Quantity = 2 },
-            new Bike() { Id = 4, Brand = "Cannondale", Model = "Topstone Carbon", Type = "Gravel Bike", Size = "Medium", Price = 3200.00, Quantity = 4 },
-            new Bike() { Id = 5, Brand = "Santa Cruz", Model = "Hightower C S", Type = "Mountain Bike", Size = "Large", Price = 5400.00, Quantity = 1 },
-            new Bike() { Id = 6, Brand = "Kona", Model = "Sutra LTD", Type = "Touring Bike", Size = "Small", Price = 2700.00, Quantity = 2 },
-            new Bike() { Id = 7, Brand = "Scott", Model = "Addict RC 20", Type = "Road Bike", Size = "Medium", Price = 3800.00, Quantity = 1 },
-            new Bike() { Id = 8, Brand = "Surly", Model = "Bridge Club", Type = "Gravel Bike", Size = "Large", Price = 1800.00, Quantity = 6 },
-            new Bike() { Id = 9, Brand = "Cervelo", Model = "Aspero-5 GRX 810", Type = "Gravel Bike", Size = "Medium", Price = 4900.00, Quantity = 3 },
-            new Bike() { Id = 10, Brand = "Bianchi", Model = "Infinito CV Disc", Type = "Road Bike", Size = "Large", Price = 4600.00, Quantity = 2 },
+            new Bike() { Id = 1, Brand = "Trek", Model = "Fuel EX 8", Type = "Mountain Bike", Size = "Medium", Price = 3500.00, Quantity = 3, Image = "https://media.istockphoto.com/id/185313478/photo/cmyk-color-guide-and-lorem-ipsum-text.jpg?s=612x612&w=0&k=20&c=llnNEei8KmQBbZkXJYEOl2wdHMs3d9vly7gp9oN4jJk=" },
+            new Bike() { Id = 2, Brand = "Specialized", Model = "Diverge", Type = "Gravel Bike", Size = "Large", Price = 2500.00, Quantity = 5, Image = "https://media.istockphoto.com/id/185313478/photo/cmyk-color-guide-and-lorem-ipsum-text.jpg?s=612x612&w=0&k=20&c=llnNEei8KmQBbZkXJYEOl2wdHMs3d9vly7gp9oN4jJk="},
+            new Bike() { Id = 3, Brand = "Giant", Model = "TCR Advanced Pro 2", Type = "Road Bike", Size = "Small", Price = 3600.00, Quantity = 2 , Image = "https://media.istockphoto.com/id/185313478/photo/cmyk-color-guide-and-lorem-ipsum-text.jpg?s=612x612&w=0&k=20&c=llnNEei8KmQBbZkXJYEOl2wdHMs3d9vly7gp9oN4jJk="},
+            new Bike() { Id = 4, Brand = "Cannondale", Model = "Topstone Carbon", Type = "Gravel Bike", Size = "Medium", Price = 3200.00, Quantity = 4, Image = "https://media.istockphoto.com/id/185313478/photo/cmyk-color-guide-and-lorem-ipsum-text.jpg?s=612x612&w=0&k=20&c=llnNEei8KmQBbZkXJYEOl2wdHMs3d9vly7gp9oN4jJk=" },
+            new Bike() { Id = 5, Brand = "Santa Cruz", Model = "Hightower C S", Type = "Mountain Bike", Size = "Large", Price = 5400.00, Quantity = 1, Image = "https://media.istockphoto.com/id/185313478/photo/cmyk-color-guide-and-lorem-ipsum-text.jpg?s=612x612&w=0&k=20&c=llnNEei8KmQBbZkXJYEOl2wdHMs3d9vly7gp9oN4jJk=" },
+            new Bike() { Id = 6, Brand = "Kona", Model = "Sutra LTD", Type = "Touring Bike", Size = "Small", Price = 2700.00, Quantity = 2, Image = "https://media.istockphoto.com/id/185313478/photo/cmyk-color-guide-and-lorem-ipsum-text.jpg?s=612x612&w=0&k=20&c=llnNEei8KmQBbZkXJYEOl2wdHMs3d9vly7gp9oN4jJk=" },
+            new Bike() { Id = 7, Brand = "Scott", Model = "Addict RC 20", Type = "Road Bike", Size = "Medium", Price = 3800.00, Quantity = 1, Image = "https://media.istockphoto.com/id/185313478/photo/cmyk-color-guide-and-lorem-ipsum-text.jpg?s=612x612&w=0&k=20&c=llnNEei8KmQBbZkXJYEOl2wdHMs3d9vly7gp9oN4jJk=" },
+            new Bike() { Id = 8, Brand = "Surly", Model = "Bridge Club", Type = "Gravel Bike", Size = "Large", Price = 1800.00, Quantity = 6, Image = "https://media.istockphoto.com/id/185313478/photo/cmyk-color-guide-and-lorem-ipsum-text.jpg?s=612x612&w=0&k=20&c=llnNEei8KmQBbZkXJYEOl2wdHMs3d9vly7gp9oN4jJk=" },
+            new Bike() { Id = 9, Brand = "Cervelo", Model = "Aspero-5 GRX 810", Type = "Gravel Bike", Size = "Medium", Price = 4900.00, Quantity = 3, Image = "https://media.istockphoto.com/id/185313478/photo/cmyk-color-guide-and-lorem-ipsum-text.jpg?s=612x612&w=0&k=20&c=llnNEei8KmQBbZkXJYEOl2wdHMs3d9vly7gp9oN4jJk=" },
+            new Bike() { Id = 10, Brand = "Bianchi", Model = "Infinito CV Disc", Type = "Road Bike", Size = "Large", Price = 4600.00, Quantity = 2, Image = "https://media.istockphoto.com/id/185313478/photo/cmyk-color-guide-and-lorem-ipsum-text.jpg?s=612x612&w=0&k=20&c=llnNEei8KmQBbZkXJYEOl2wdHMs3d9vly7gp9oN4jJk=" },
         };
 
     List<BikePart> bikeParts = new List<BikePart>
