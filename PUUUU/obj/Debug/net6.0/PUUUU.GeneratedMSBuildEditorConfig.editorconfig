@@ -8,65 +8,65 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PUUUU
 build_property.RootNamespace = PUUUU
-build_property.ProjectDir = C:\Users\user\Documents\GitHub\PUUUU\PUUUU\
+build_property.ProjectDir = E:\PUUUU\PUUUU\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\user\Documents\GitHub\PUUUU\PUUUU
+build_property.MSBuildProjectDirectory = E:\PUUUU\PUUUU
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/user/Documents/GitHub/PUUUU/PUUUU/Areas/Identity/Pages/_ViewStart.cshtml]
+[E:/PUUUU/PUUUU/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/GitHub/PUUUU/PUUUU/Views/Bikes/Create.cshtml]
+[E:/PUUUU/PUUUU/Views/Bikes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlrZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/GitHub/PUUUU/PUUUU/Views/Bikes/Delete.cshtml]
+[E:/PUUUU/PUUUU/Views/Bikes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlrZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/GitHub/PUUUU/PUUUU/Views/Bikes/Details.cshtml]
+[E:/PUUUU/PUUUU/Views/Bikes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlrZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/GitHub/PUUUU/PUUUU/Views/Bikes/Edit.cshtml]
+[E:/PUUUU/PUUUU/Views/Bikes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlrZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/GitHub/PUUUU/PUUUU/Views/Bikes/Index.cshtml]
+[E:/PUUUU/PUUUU/Views/Bikes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlrZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/GitHub/PUUUU/PUUUU/Views/Home/Index.cshtml]
+[E:/PUUUU/PUUUU/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/GitHub/PUUUU/PUUUU/Views/Home/Privacy.cshtml]
+[E:/PUUUU/PUUUU/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/GitHub/PUUUU/PUUUU/Views/Shared/Error.cshtml]
+[E:/PUUUU/PUUUU/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/GitHub/PUUUU/PUUUU/Views/Shared/_LoginPartial.cshtml]
+[E:/PUUUU/PUUUU/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/GitHub/PUUUU/PUUUU/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/PUUUU/PUUUU/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/GitHub/PUUUU/PUUUU/Views/_ViewImports.cshtml]
+[E:/PUUUU/PUUUU/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/GitHub/PUUUU/PUUUU/Views/_ViewStart.cshtml]
+[E:/PUUUU/PUUUU/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/GitHub/PUUUU/PUUUU/Views/Shared/_Layout.cshtml]
+[E:/PUUUU/PUUUU/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-7uocc8fppx

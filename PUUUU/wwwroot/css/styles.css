@@ -1,0 +1,48 @@
+﻿img {
+    width: 120%;
+    height: 120%;
+    margin-bottom: 100px;
+}
+
+.photo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 50px;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 55%;
+    left: -150px;
+    background-color: black;
+    color: #fff;
+    transform: skewX( -20deg );
+    padding: 10px 40px 10px 40px;
+
+}
+
+.image-text2 {
+    position: absolute;
+    bottom: 70%;
+    left: -310px;
+    background-color: orange;
+    color: #fff;
+    transform: skewX( -20deg );
+    padding: 10px 10px 10px 40px;
+    width: 700px;
+
+}
+
+@media (max-width: 767px) {
+    .image-text{
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .image-text2 {
+        display: none;
+    }
+}
+
+
