@@ -110,7 +110,18 @@ namespace PUUUU.Areas.Identity.Pages.Account.Manage
                 }
             }
 
-            await _signInManager.RefreshSignInAsync(user);
+			var userName = await _userManager.GetUserNameAsync(user);
+			if (Username != userName)
+			{
+                var setUsernameResult = await _userManager.SetUserNameAsync(user, Username);
+				if (!setUsernameResult.Succeeded)
+				{
+					StatusMessage = "Unexpected error when trying to set username.";
+					return RedirectToPage();
+				}
+			}
+
+			await _signInManager.RefreshSignInAsync(user);
             StatusMessage = "Your profile has been updated";
             return RedirectToPage();
         }
