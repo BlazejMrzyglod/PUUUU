@@ -29,7 +29,7 @@ namespace PUUUU.Areas.Identity.Pages.Account.Manage
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
         ///     directly from your code. This API may change or be removed in future releases.
         /// </summary>
-        public string Username { get; set; }
+       
 
         /// <summary>
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
@@ -58,6 +58,8 @@ namespace PUUUU.Areas.Identity.Pages.Account.Manage
             [Phone]
             [Display(Name = "Phone number")]
             public string PhoneNumber { get; set; }
+            [Display(Name = "Username")]
+            public string Username { get; set; }
         }
 
         private async Task LoadAsync(IdentityUser user)
@@ -65,12 +67,13 @@ namespace PUUUU.Areas.Identity.Pages.Account.Manage
             var userName = await _userManager.GetUserNameAsync(user);
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
 
-            Username = userName;
+            
 
             Input = new InputModel
             {
-                PhoneNumber = phoneNumber
-            };
+                PhoneNumber = phoneNumber,
+                Username = userName
+        };
         }
 
         public async Task<IActionResult> OnGetAsync()
@@ -110,10 +113,10 @@ namespace PUUUU.Areas.Identity.Pages.Account.Manage
                 }
             }
 
-			var userName = await _userManager.GetUserNameAsync(user);
-			if (Username != userName)
+            var userName = await _userManager.GetUserNameAsync(user);
+			if (Input.Username != userName)
 			{
-                var setUsernameResult = await _userManager.SetUserNameAsync(user, Username);
+                var setUsernameResult = await _userManager.SetUserNameAsync(user, Input.Username);
 				if (!setUsernameResult.Succeeded)
 				{
 					StatusMessage = "Unexpected error when trying to set username.";
