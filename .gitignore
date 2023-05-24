@@ -396,3 +396,12 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+.csproj.nuget.g.props
+.csproj.nuget.dgspec.json
+.nuget.cache
+.assets.json
+.GeneratedMSBuildEditorConfig.editorconfig
+.csproj.AssemblyReference.cache
+.assets.cache
+
+
