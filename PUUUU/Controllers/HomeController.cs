@@ -22,6 +22,10 @@ namespace PUUUU.Controllers
         {
             return View();
         }
+        public IActionResult Configure()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {
