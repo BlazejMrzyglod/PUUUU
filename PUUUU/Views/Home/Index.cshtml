@@ -6,16 +6,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Cyklo</title>
     <link rel="stylesheet" href="~/css/styles.css" />
 </head>
 <body>
-    <div class="photo-container">
-        <img src="~/photos/Main_photo.jpg" alt="Sample_Photo" />
-        <div class="image-text2">
-            <h2>PRZYGODA CZEKA!</h2>
+    <div class="content-wrapper">
+        <div class="photo-container">
+            <img src="~/photos/Main_photo.jpg" alt="Sample_Photo" />
+            <div class="image-text2">
+                <h2>PRZYGODA CZEKA</h2>
+            </div>
+            <div class="image-text">
+                <h2>SKONFIGURUJ SWÓJ ROWER</h2>
+            </div>
         </div>
-        <div class="image-text">
-         <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Configure"><h2>SKONFIGURUJ SWÓJ ROWER</h2></a>
+
+        <div class="information-container">
+            <div class="three-columns-grid">
+                <div class="box1">
+                    <img id="Image1" src="~/photos/package.png" style="border-width:0px;" />
+                    <br />
+                    <h>Darmowa dostawa</h>
+                    <p>Powyżej 300 zł</p>
+                </div>
+                <div class="box2">
+                    <img id="Image1" src="~/photos/wall-clock.png" style="border-width:0px;" />
+                    <br />
+                    <h>14 dni na zwrot towaru</h>
+                    <p>Obsługa 24/7</p>
+                </div>
+                <div class="box3">
+                    <img id="Image1" src="~/photos/lock.png" style="border-width:0px;" />
+                    <br />
+                    <h>Bezpieczne płatności</h>
+                    <p>Przelewy24, PayU</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="producers-container">   
+            <h1>Producenci</h1>          
+            <div class="producers-photos">
+                <img id="ImageBike1" src="~/photos/Giant.png" style="border-width:0px;" />
+                <img id="ImageBike2" src="~/photos/Kross.png" style="border-width:0px;" />
+                <img id="ImageBike3" src="~/photos/Scott.png" style="border-width:0px;" />
+                <img id="ImageBike4" src="~/photos/Shimano.png" style="border-width:0px;" />
+                <img id="ImageBike5" src="~/photos/Trek.png" style="border-width:0px;" />
+            </div>
+        </div>
+
+        <div class="headquarters-container">
+            <h1>Nasza siedziba</h1>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.1507389439153!2d19.05516287685364!3d49.783230171472574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47169fc0a7862b97%3A0xab58f9e2cef89ecf!2sAkademia%20Techniczno-Humanistyczna%20w%20Bielsku-Bia%C5%82ej!5e0!3m2!1spl!2spl!4v1685369566369!5m2!1spl!2spl" width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </div>
 </body>

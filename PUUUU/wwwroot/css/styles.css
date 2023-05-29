@@ -1,4 +1,4 @@
-﻿img {
+﻿photo-container img {
     width: 120%;
     height: 120%;
     margin-bottom: 100px;
@@ -8,7 +8,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    top: 50px;
+
 }
 
 .image-text {
@@ -45,4 +45,106 @@
     }
 }
 
+.three-columns-grid {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 250px;
+    height: auto;
+    width: auto;
+    -webkit-box-shadow: 0px 0px 100px -20px grey;
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+    font-family:Montserrat;
+    padding: 60px;
+}
+    .three-columns-grid > * {
+        padding: 1rem;
+        position: center;
+    }
+
+    .three-columns-grid img {
+        height: 50px;
+        width:50px;
+        margin-bottom: 15px;
+    }
+
+    .three-columns-grid p {
+        font-size: 14px;
+        color: rgb(125, 125, 125)
+    }
+
+.producers-container {
+    grid-auto-rows: 0fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 150px;
+    height: auto;
+    width: auto;
+    -webkit-box-shadow: 0px 0px 100px -20px white;
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+    font-family: Montserrat;
+    padding: 60px;
+}
+
+producers-container {
+    text-align: center;
+}
+
+.producers-container h1 {
+    margin-bottom: 50px;
+}
+
+.producers-photos {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: auto;
+    width: auto;
+    -webkit-box-shadow: 0px 0px 100px -20px white;
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+    font-family: Montserrat;}
+
+.producers-photos img {
+    width: 160px;
+    height: 85px;
+}
+
+.box1 img,
+.box2 img,
+.box3 img {
+    transition: transform 0.5s;
+}
+
+    .box1 img:hover,
+    .box2 img:hover,
+    .box3 img:hover {
+        transform: scale(1.2);
+    }
+
+.headquarters-container {
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+    margin: 150px 0 150px 0;
+    height: auto;
+    -webkit-box-shadow: 0px 0px 100px -20px white;
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+    font-family: Montserrat;
+}
+
+headquarters-container {
+    text-align: center;
+    width: auto;
+
+}
+
+.headquarters-container h1 {
+    margin-bottom: 50px;
+}
 
