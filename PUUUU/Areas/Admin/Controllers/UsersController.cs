@@ -5,6 +5,7 @@ using PUUUU.Data;
 
 namespace PUUUU.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class UsersController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;

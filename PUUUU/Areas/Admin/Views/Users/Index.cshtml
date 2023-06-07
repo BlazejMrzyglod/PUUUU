@@ -1,0 +1,47 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@model IQueryable<IdentityUser>
+@inject UserManager<IdentityUser> _userManager
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				Id
+			</th>
+			<th>
+				Nazwa użytkownika
+			</th>
+			<th>
+				Email
+			</th>
+			<th>
+				Rola
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+
+		@foreach (var user in Model)
+		{
+			<tr>
+				<td>
+					@user.Id
+				</td>
+				<td>
+					@user.UserName
+				</td>
+				<td>
+					@user.Email
+				</td>
+				<td>
+					@_userManager.GetRolesAsync(user).Result.FirstOrDefault()
+				</td>
+				<td>
+					<a asp-action="Edit" asp-route-id="@user.Id">Edytuj</a> |
+					<a asp-action="Delete" asp-route-id="@user.Id">Usuń</a>
+				</td>
+			</tr>
+		}
+
+	</tbody>
+</table>
+
