@@ -14,6 +14,8 @@ namespace PUUUU.Data
 
         public DbSet<Bike> Bikes { get; set; }
         public DbSet<BikePart> BikeParts { get; set; }
+        public DbSet<BikeOrder> BikeOrders { get; set; }
+        public DbSet<ConfigureOrder> ConfigureOrders { get; set; }
 
     }
 }
