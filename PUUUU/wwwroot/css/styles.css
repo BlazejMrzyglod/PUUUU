@@ -148,3 +148,101 @@ headquarters-container {
     margin-bottom: 50px;
 }
 
+.AboutUsH2 {
+    margin-top: 75px;
+    color: orange;
+}
+
+.ColumnsAboutUs {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 75px;
+    height: auto;
+    width: auto;
+    -webkit-box-shadow: 0px 0px 100px -20px grey;
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+    font-family: Montserrat;
+    padding: 60px;
+}
+
+.ColumnsAboutUs > * {
+    padding: 1rem;
+    position: center;
+}
+
+.ColumnsAboutUs img {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.ColumnsAboutUs p {
+    font-size: 14px;
+    color: rgb(125, 125, 125)
+}
+
+.ColumnsAboutUs2 {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 75px;
+    height: auto;
+    width: auto;
+    -webkit-box-shadow: 0px 0px 100px -20px grey;
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+    font-family: Montserrat;
+    padding: 60px;
+}
+
+    .ColumnsAboutUs2 > * {
+        padding: 1rem;
+        position: center;
+    }
+
+    .ColumnsAboutUs2 img {
+        height: 50px;
+        width: 50px;
+        margin-bottom: 15px;
+    }
+
+    .ColumnsAboutUs2 p {
+        font-size: 14px;
+        color: rgb(125, 125, 125)
+    }
+
+
+.ColumnsAboutUs3 {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 75px;
+    height: auto;
+    width: auto;
+    -webkit-box-shadow: 0px 0px 100px -20px grey;
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+    font-family: Montserrat;
+    padding: 60px;
+}
+
+    .ColumnsAboutUs3 > * {
+        padding: 1rem;
+        position: center;
+    }
+
+    .ColumnsAboutUs3 img {
+        height: 50px;
+        width: 50px;
+        margin-bottom: 15px;
+    }
+
+    .ColumnsAboutUs3 p {
+        font-size: 14px;
+        color: rgb(125, 125, 125)
+    }
