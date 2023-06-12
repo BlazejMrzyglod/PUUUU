@@ -1,0 +1,73 @@
+﻿@model PUUUU.Models.ViewModels.Contact
+
+@{
+    ViewData["Title"] = "ContactMail";
+}
+<link rel="stylesheet" href="~/css/styles.css" />
+<h1 style="color: orange; margin-left: 15px;">Kontakt</h1>
+<div class="grid">
+    <div class="information-container">
+        <div class="ContactMap">
+            <div class="box4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.1507389439153!2d19.05516287685364!3d49.783230171472574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47169fc0a7862b97%3A0xab58f9e2cef89ecf!2sAkademia%20Techniczno-Humanistyczna%20w%20Bielsku-Bia%C5%82ej!5e0!3m2!1spl!2spl!4v1685369566369!5m2!1spl!2spl" width="680" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="box55">
+                <br />
+                <h2>Nasi eksperci czekają na Ciebie:</h2>
+                <p>pon. - pt.: 8:00 - 18:00</p>
+                <p>sob.: 8:00 - 16:00</p>
+                <h2>Dane firmy:</h2>
+                <p>123-456-789</p>
+                <p>CYKLO</p>
+                <p>Bielsko-Biała ul.Willowa 2</p>
+                <p>cyklo@info.pl</p>
+                <p>NIP: 9511658437</p>
+                <p>REGON: 363255435</p>
+                <p>KRS: 0000708523</p>
+            </div>
+        </div>
+    </div>
+    <hr />
+
+    <div class="information-container">
+        <div class="ContactForm">
+            <div class="box4">
+                <h1>Skontaktuj się z nami</h1>
+                <p>Wprowadź Imię,Email oraz swoją wiadomość</p>
+                <p>Każda wiadomość zostaje rozpatrzona szczegółowo</p>
+            </div>
+            <div class="box55">
+                <br />
+                <div class="column">
+                    <form asp-action="ContactMail">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="Email" class="control-label" style="font-size: 18px;"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Name" class="control-label" style="font-size: 18px;"></label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Message" class="control-label" style="font-size: 18px;"></label>
+                            <textarea asp-for="Message" class="form-control"></textarea>
+                            <span asp-validation-for="Message" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <center><input style="margin-top: 20px; background-color: orange;  border: none; border-radius: 8px;" type="submit" value="Create" class="btn btn-primary" /></center>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@if (ViewBag.ConfirmMsg != null)
+{
+    <div class="alert alert-succes">@ViewBag.ConfirmMsg</div>
+}
+
+
