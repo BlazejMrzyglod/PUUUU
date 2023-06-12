@@ -1,0 +1,66 @@
+﻿@model PUUUU.Models.ViewModels.ConfigureViewModel
+@{
+    ViewData["Title"] = "Bike Configuration";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/styles.css" />
+</head>
+<body>
+    <header>
+        <!-- Your header content goes here -->
+    </header>
+    <main>
+        <section class="configuration-section">
+            <h1>Bike Configuration</h1>
+            <table>
+                <tr>
+                    <th>Frame</th>
+                    <th>Fork</th>
+                    <th>Wheels</th>
+                    <th>Saddle</th>
+                    <th>Handle</th>
+                    <th>Pedals</th>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DropDownListFor(modelItem => Model.FrameId, Model.Frames, new {@class ="form-control"})
+                    </td>
+                    <td>
+                        @Html.DropDownListFor(modelItem => Model.ForkId, Model.Forks, new {@class ="form-control"})
+                    </td>
+                    <td>
+                        @Html.DropDownListFor(modelItem => Model.WheelsId, Model.Wheels, new {@class ="form-control"})
+                    </td>
+                    <td>
+                        @Html.DropDownListFor(modelItem => Model.SaddleId, Model.Saddles, new {@class ="form-control"})
+                    </td>
+                    <td>
+                        @Html.DropDownListFor(modelItem => Model.HandleId, Model.Handles, new {@class ="form-control"})
+                    </td>
+                    <td>
+                        @Html.DropDownListFor(modelItem => Model.PedalsId, Model.Pedals, new {@class ="form-control"})
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="summary-section">
+            <h2>Configuration Summary</h2>
+            <!-- Display the summary of the bike configuration here -->
+        </section>
+        <section class="result-section">
+            <h2>Configuration Result</h2>
+            <!-- Display the result of the bike configuration here -->
+        </section>
+    </main>
+    <footer>
+        <!-- Your footer content goes here -->
+    </footer>
+    <script src="~/js/scripts.js"></script>
+</body>
+</html>
