@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using PUUUU.Data;
 using PUUUU.Models.Models;
@@ -17,7 +18,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
-
+//builder.Services.AddTransient<IEmailSender, SendMail>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -117,6 +118,9 @@ using (var scope = app.Services.CreateScope())
     var result = userManager.ConfirmEmailAsync(admin, verificationCode).Result;
 
     userManager.AddToRoleAsync(admin, "Administrator");
+
+
+
 }
 app.Run();
 

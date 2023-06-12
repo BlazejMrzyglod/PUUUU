@@ -304,4 +304,71 @@ headquarters-container {
     }
 
 
+.ContactMap {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    height: auto;
+    width: auto;
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
 
+    .ContactMap > * {
+        padding: 1rem;
+        position: center;
+    }
+
+    .ContactMap img {
+        height: 200px;
+        width: 300px;
+    }
+
+    .ContactMap p {
+        font-size: 14px;
+        color: rgb(125, 125, 125)
+    }
+    .ContactMap .box55 {
+        text-align: left;
+    }
+
+    .ContactMap h2 {
+        font-size: 18px;
+    }
+
+
+
+.ContactForm {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    height: auto;
+    width: auto;
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+}
+
+    .ContactForm > * {
+        padding: 1rem;
+        position: center;
+    }
+
+    .ContactForm img {
+        height: 200px;
+        width: 300px;
+    }
+
+    .ContactForm p {
+        font-size: 14px;
+        color: rgb(125, 125, 125)
+    }
+
+    .ContactForm h1 {
+        font-size: 19px;
+        margin-top: 15%;
+    }
