@@ -16,7 +16,7 @@
         <!-- Your header content goes here -->
     </header>
     <main>
-        <section class="configuration-section">
+        <form asp-action="Index">ion class="configuration-section">
             <h1>Bike Configuration</h1>
             <table>
                 <tr>
@@ -48,7 +48,10 @@
                     </td>
                 </tr>
             </table>
-        </section>
+            <div class="form-group">
+                <input type="submit" value="Zapisz" class="btn btn-primary" />
+            </div>
+        </form>
         <section class="summary-section">
             <h2>Configuration Summary</h2>
             <!-- Display the summary of the bike configuration here -->
