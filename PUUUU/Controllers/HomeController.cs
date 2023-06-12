@@ -42,6 +42,19 @@ namespace PUUUU.Controllers
             return View();
         }
 
+        public IActionResult Shipment()
+        {
+            return View();
+        }
+        public IActionResult Returns()
+        {
+            return View();
+        }
+        public IActionResult Payment()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

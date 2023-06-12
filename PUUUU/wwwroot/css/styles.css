@@ -174,8 +174,8 @@ headquarters-container {
 }
 
 .ColumnsAboutUs img {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 175px;
     margin-bottom: 15px;
 }
 
@@ -246,3 +246,62 @@ headquarters-container {
         font-size: 14px;
         color: rgb(125, 125, 125)
     }
+
+
+.ColumnsShipment {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr ;
+    margin-top: 75px;
+    height: auto;
+    width: auto;
+    -webkit-box-shadow: 0px 0px 100px -20px grey;
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+    font-family: Montserrat;
+    padding: 60px;
+}
+
+    .ColumnsShipment > * {
+        padding: 1rem;
+        position: center;
+    }
+
+    .ColumnsShipment p {
+        font-size: 14px;
+        color: rgb(125, 125, 125)
+    }
+
+
+.PaymentGrid {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 75px;
+    height: auto;
+    width: auto;
+    -webkit-box-shadow: 0px 0px 100px -20px grey;
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+    font-family: Montserrat;
+}
+
+    .PaymentGrid > * {
+        padding: 1rem;
+        position: center;
+    }
+
+.PaymentGrid img {
+    height: 200px;
+    width: 300px;
+}
+
+    .PaymentGrid p {
+        font-size: 14px;
+        color: rgb(125, 125, 125)
+    }
+
+
+
