@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using PUUUU.Data;
@@ -6,6 +7,7 @@ using PUUUU.Data;
 namespace PUUUU.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Administrator")]
     public class UsersController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;

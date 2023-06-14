@@ -13,6 +13,7 @@ using PUUUU.Models.Models;
 namespace PUUUU.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Administrator")]
     public class BikesAdminController : Controller
     {
         private readonly ApplicationDbContext _context;
