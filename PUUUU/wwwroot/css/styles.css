@@ -372,3 +372,8 @@ headquarters-container {
         font-size: 19px;
         margin-top: 15%;
     }
+
+    table a{
+        color: orange !important;
+        text-decoration: none !important;
+    }

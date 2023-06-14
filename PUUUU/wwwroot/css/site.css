@@ -147,5 +147,14 @@ body > div > main > div > div.photo-container > img{
     max-width: 100vw;
 }
 
+table a {
+    color: orange !important;
+    text-decoration: none !important;
+}
+
+table a:hover {
+    color: black !important;
+    text-decoration: none !important;
+}
 
 
