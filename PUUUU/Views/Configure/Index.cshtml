@@ -1,6 +1,6 @@
 ﻿@model PUUUU.Models.ViewModels.ConfigureViewModel
 @{
-    ViewData["Title"] = "Bike Configuration";
+    ViewData["Title"] = "Konfigurator roweru";
 }
 
 <!DOCTYPE html>
@@ -16,16 +16,16 @@
         <!-- Your header content goes here -->
     </header>
     <main>
-        <form asp-action="Index">ion class="configuration-section">
-            <h1>Bike Configuration</h1>
+        <form asp-action="Index">
+            <h1>Konfigurator roweru</h1>
             <table>
                 <tr>
-                    <th>Frame</th>
-                    <th>Fork</th>
-                    <th>Wheels</th>
-                    <th>Saddle</th>
-                    <th>Handle</th>
-                    <th>Pedals</th>
+                    <th>Rama</th>
+                    <th>Widelec</th>
+                    <th>Koła</th>
+                    <th>Siedzenie</th>
+                    <th>Uchwyt</th>
+                    <th>Pedały</th>
                 </tr>
                 <tr>
                     <td>
@@ -52,14 +52,14 @@
                 <input type="submit" value="Zapisz" class="btn btn-primary" />
             </div>
         </form>
-        <section class="summary-section">
+       @* <section class="summary-section">
             <h2>Configuration Summary</h2>
             <!-- Display the summary of the bike configuration here -->
         </section>
         <section class="result-section">
             <h2>Configuration Result</h2>
             <!-- Display the result of the bike configuration here -->
-        </section>
+        </section>*@
     </main>
     <footer>
         <!-- Your footer content goes here -->

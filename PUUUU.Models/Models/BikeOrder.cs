@@ -1,6 +1,7 @@
 ﻿
 
 using Microsoft.AspNetCore.Identity;
+using System.ComponentModel;
 
 namespace PUUUU.Models.Models
 {
@@ -8,8 +9,11 @@ namespace PUUUU.Models.Models
     {
         public int Id { get; set; }
         public DateTime CreatedDate { get; set; }
+        [DisplayName("Adres")]
         public string Address { get; set; }
+        [DisplayName("Metoda płatności")]
         public string PaymentMethod { get; set; }
+        [DisplayName("Sposób dostawy")]
         public string DeliveryMethod { get; set; }
         public virtual IdentityUser User { get; set; }
         public int BikeId { get; set; }

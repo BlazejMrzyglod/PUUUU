@@ -65,6 +65,7 @@ namespace PUUUU.Areas.Identity.Pages.Account
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
             [Required]
+            [Display(Name = "Nazwa użytkownika")]
             public string Username { get; set; }
 
             /// <summary>
@@ -73,13 +74,14 @@ namespace PUUUU.Areas.Identity.Pages.Account
             /// </summary>
             [Required]
             [DataType(DataType.Password)]
+            [Display(Name = "Hasło")]
             public string Password { get; set; }
 
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
-            [Display(Name = "Remember me?")]
+            [Display(Name = "Zapamiętaj mnie")]
             public bool RememberMe { get; set; }
         }
 
