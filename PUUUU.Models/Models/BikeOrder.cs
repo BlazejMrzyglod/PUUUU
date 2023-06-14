@@ -8,6 +8,7 @@ namespace PUUUU.Models.Models
     public class BikeOrder
     {
         public int Id { get; set; }
+        [DisplayName("Data stworzenia")]
         public DateTime CreatedDate { get; set; }
         [DisplayName("Adres")]
         public string Address { get; set; }
