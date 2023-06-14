@@ -1,6 +1,9 @@
 ﻿@using Microsoft.AspNetCore.Identity;
 @model IQueryable<IdentityUser>
 @inject UserManager<IdentityUser> _userManager
+@{
+	ViewData["Title"] = "Lista użytkowników";
+}
 <table class="table">
 	<thead>
 		<tr>
